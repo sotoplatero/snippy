@@ -6,6 +6,7 @@
         "leocavalcante/siler": "^1.7",
         "vlucas/phpdotenv": "^4.1",
         "twig/twig": "^3.0",
-        "morris/lessql": "^0.4.1"
+        "morris/lessql": "^0.4.1",
+        "ext-pdo_sqlite": "*"
     }
 }
