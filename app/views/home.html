@@ -19,7 +19,15 @@
     <div class="container" id="app">
         <div class="row is-center">
             <div class="col-6">
-                <h2>Snippity <small><a href="https://github.com/sotoplatero/snippy">code</a></small></h2>
+                <nav class="nav mb-3">
+                  <div class="nav-left">
+                    <a class="brand is-paddingless" href="/">Snippety</a>
+                  </div>
+                  <div class="nav-right">
+                    <a href="https://github.com/sotoplatero/snippy" >code</a>
+                  </div>
+                </nav>                 
+                <!-- <h2>Snippity <small><a href="https://github.com/sotoplatero/snippy">code</a></small></h2> -->
                 <!-- <p><input type="text" name="title" placeholder="Title"></p> -->
                 <form method="POST">
                     <p><textarea name="code" id="code">// Write or cut and paste your js code  
@@ -28,8 +36,8 @@ function(msg){
   alert(msg);
 }</textarea></p>
                     <p>
-                        <button class="" id="btn-save" type="submit">Save</button>
-                        <button id="btn-photo">Foto</button>
+                        <button id="btn-save" type="submit">Save</button>
+                        <button id="btn-photo">Photo</button>
                     </p>
                 </form>
             </div>

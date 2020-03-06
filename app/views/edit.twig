@@ -16,7 +16,7 @@
             <div class="col-6">
                 <nav class="nav mb-3">
                   <div class="nav-left">
-                    <a class="brand is-paddingless" href="#">Snippety</a>
+                    <a class="brand is-paddingless" href="/">Snippety</a>
                   </div>
                   <div class="nav-right">
                     <a href="https://github.com/sotoplatero/snippy" >code</a>
@@ -28,7 +28,7 @@
                     <p><textarea name="code" id="code">{{ code }}</textarea></p>
                     <p>
                         <button id="btn-photo">Photo</button>
-                        <button id="btn-copy">Copy URL</button>
+                        <a href="https://twitter.com/intent/tweet" id="btn-twitter" class="button" >Twitter</a>
                     </p>
                 </form>
             </div>
@@ -45,7 +45,7 @@
             lineNumbers: true,
             lineWrapping: true,
             theme: 'monokai',
-            readOnly: true
+            readOnly: 'nocursor'
             // mode: "htmlmixed"
         });        
     </script>    
