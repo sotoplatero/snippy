@@ -14,7 +14,15 @@
     <div class="container" id="app">
         <div class="row is-center">
             <div class="col-6">
-                <h2>Snippety</h2>
+                <nav class="nav mb-3">
+                  <div class="nav-left">
+                    <a class="brand is-paddingless" href="#">Snippety</a>
+                  </div>
+                  <div class="nav-right">
+                    <a href="https://github.com/sotoplatero/snippy" >code</a>
+                  </div>
+                </nav>                
+                {# <h2>Snippety <small><a href="https://github.com/sotoplatero/snippy">code</a></small></h2> #}
                 <!-- <p><input type="text" name="title" placeholder="Title"></p> -->
                 <form method="POST">
                     <p><textarea name="code" id="code">{{ code }}</textarea></p>
