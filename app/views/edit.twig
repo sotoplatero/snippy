@@ -22,9 +22,8 @@
                 <h2>Snippety</h2>
                 <!-- <p><input type="text" name="title" placeholder="Title"></p> -->
                 <form method="POST">
-                    <p><textarea name="code" id="code"></textarea></p>
+                    <p><textarea name="code" id="code">{{ code }}</textarea></p>
                     <p>
-                        <button class="" id="btn-save" type="submit">Save</button>
                         <button id="btn-photo">Foto</button>
                     </p>
                 </form>
@@ -41,7 +40,8 @@
             mode:  "javascript",
             lineNumbers: true,
             lineWrapping: true,
-            theme: 'monokai'
+            theme: 'monokai',
+            readOnly: true
             // mode: "htmlmixed"
         });        
     </script>    
