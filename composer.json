@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "srv": "php -S 0.0.0.0:8080 -t ."
+    },	
+    "require": {
+        "leocavalcante/siler": "^1.7",
+        "vlucas/phpdotenv": "^4.1",
+        "twig/twig": "^3.0"
+    }
+}

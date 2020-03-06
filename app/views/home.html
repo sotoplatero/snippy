@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Snippy</title>
+
+    <!-- Scripts -->
+
+    <!-- Styles -->
+    <link href="/assets/chota.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/cm/lib/codemirror.css">
+    <link rel="stylesheet" href="/assets/cm/theme/monokai.css">
+    <link rel="stylesheet" href="/assets/app.css">
+</head>
+<body class="padding-top">
+    <div class="container" id="app">
+        <div class="row is-center">
+            <div class="col-6">
+                <h1>Snippy</h1>
+                <!-- <p><input type="text" name="title" placeholder="Title"></p> -->
+                <p><textarea name="code" id="code"></textarea></p>
+                <p>
+                    <button id="btn-photo">Download Image</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/cm/lib/codemirror.js"></script> 
+    <script src="/assets/cm/mode/javascript/javascript.js"></script>   
+    <script src="/assets/html2canvas.min.js"></script>    
+    <script src="/assets/app.js"></script>    
+    <script >
+        CodeMirror.fromTextArea(document.getElementById("code"), {
+            value: "Page\n",
+            mode:  "javascript",
+            lineNumbers: true,
+            lineWrapping: true,
+            theme: 'monokai'
+            // mode: "htmlmixed"
+        });        
+    </script>    
+</body>
+</html>
