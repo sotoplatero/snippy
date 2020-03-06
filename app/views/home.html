@@ -22,7 +22,11 @@
                 <h2>Snippity</h2>
                 <!-- <p><input type="text" name="title" placeholder="Title"></p> -->
                 <form method="POST">
-                    <p><textarea name="code" id="code"></textarea></p>
+                    <p><textarea name="code" id="code">// Write or cut and paste your js code  
+var msg = "Hello World!!";
+function(msg){ 
+  alert(msg);
+}</textarea></p>
                     <p>
                         <button class="" id="btn-save" type="submit">Save</button>
                         <button id="btn-photo">Foto</button>
@@ -37,7 +41,6 @@
     <script src="/assets/app.js"></script>    
     <script >
         CodeMirror.fromTextArea(document.getElementById("code"), {
-            value: "Page\n",
             mode:  "javascript",
             lineNumbers: true,
             lineWrapping: true,
